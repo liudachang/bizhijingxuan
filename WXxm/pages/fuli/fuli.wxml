@@ -1,0 +1,12 @@
+<!--pages/fuli/fuli.wxml-->
+
+<!-- 第一个小框 -->
+<view class="huodong" wx:for="{{tuList}}" wx:key="{{index}}">
+  <image src="{{item.img_url}}" lazy-load='true' mode="aspectFill"></image>
+  <view class="fense">
+    <view class="pinpai">{{item.name}}</view>
+    <view class="juli">{{item.title}}</view>
+  </view>
+<!-- 分隔块 -->
+<view class="divider"></view>
+</view>

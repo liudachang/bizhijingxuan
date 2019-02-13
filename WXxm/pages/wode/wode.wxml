@@ -1,0 +1,31 @@
+<!--pages/wode/wode.wxml-->
+<!-- 我的 -->
+<!-- 头像 -->
+<view class="touxiang" wx:for="{{touxiangList}}" wx:key="id">
+  <image class="touxiang-item" src="{{item.img_url}}" lazy-load mode="aspectFill"></image>
+  <text>{{item.title}}</text>
+</view>
+<!--粉丝 关注  -->
+<view class="fensi">
+  <navigator class="fensi-item">
+    <text >0</text>
+    <text>粉丝</text>
+  </navigator>
+
+  <navigator class="guanzhu-item">
+    <text>1</text>
+    <text>关注</text>
+  </navigator>
+</view>
+<!-- 分隔块 -->
+<view class="divider"></view>
+<!-- 多行 -->
+<view>
+  <navigator class="shoucang">
+    <image src="http://127.0.0.1:3000/img/za/1.png"></image>
+    <view class="jiantou arrow">
+      <text >我的收藏</text>
+    </view>
+    
+  </navigator>
+</view>

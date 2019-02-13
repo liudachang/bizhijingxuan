@@ -1,0 +1,33 @@
+/* pages/fuli/fuli.wxss */
+.huodong{
+  width:96%;
+  height:470rpx;
+  font-size:13px;
+}
+.huodong image{
+  width:100%;
+  height:330rpx;
+  margin:15rpx 15rpx;
+}
+/* 第二行总的 弹性 在一行 */
+.fense{
+  display: flex;
+  justify-content: space-between;
+  margin:20rpx 15rpx;
+ 
+}
+/*第二行的  */
+.fense view{
+  padding:2rpx 15rpx;
+  border-radius: 9rpx;
+}
+/* 品牌活动 的粉底 白字 */
+.fense .pinpai{
+  color:#fff;
+  background: rgb(228, 54, 83);
+}
+/* 距离结束还剩几天 */
+.fense .juli{
+  color:#aaa;
+}
+

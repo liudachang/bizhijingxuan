@@ -1,0 +1,102 @@
+/* pages/fenlei/fenlei.wxss */
+/*大框 最大的*/
+.fenlei{
+  width:100%;
+  display:flex;
+}
+/*左框 风景建筑 那一列*/
+.fenlei-zi{
+  width:25%;
+  height:100%;
+  font-size:14px;
+  /* display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center; */
+  border-right: 2px solid #ccc;
+}
+/*大框下的a标签*/
+.fenlei-zi .fenlei-item{
+  height:100rpx;
+  margin-left:35rpx;
+  display: block;
+}
+.fenlei-zi .fenlei-item text{
+  margin:10rpx;
+}
+/*右边框第一个图*/
+
+.ybk .fenlei-tu image{
+  width:100%;
+  height:250rpx;
+  margin-left:20rpx;
+}
+/* 风景建筑 */
+/* .ybk .fjjz{
+  width:100%;
+} */
+/* .ybk .fjjz text{
+  text-align:center;
+  font-size:14px;
+} */
+/* 右边框 */
+.ybk{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  width:70%;
+}
+.fjjz text{
+  font-size:14px;
+  display:flex;
+  justify-content: center;
+  margin:15rpx;
+  padding:10rpx;
+  border-bottom:1px solid #ccc;
+}
+
+/* 整行 一行 */
+.zhenghang{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  font-size:14px;
+  flex-wrap: wrap;
+}
+.dange{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  width:30%;
+  margin:5rpx;
+}
+.dange image{
+  width:100%;
+  height:160rpx;
+  margin:10rpx;
+}
+.dange text{
+  text-align: center;
+}
+
+.fenlei-zi{
+  positon:fixed;
+  height:1500rpx;
+  overflow: scroll;
+}
+
+/*滚动条消失 消失消失*/
+/* .fenlei-zi {
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 0 0.1rem;
+    margin-bottom: -.2rem;
+    overflow: -moz-scrollbars-none;
+    overflow: -moz-scrollbars-none;
+}
+.fenlei-zi::-webkit-scrollbar{
+    display: none;
+} */

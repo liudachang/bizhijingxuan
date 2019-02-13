@@ -1,0 +1,75 @@
+/* pages/quanzi/quanzi.wxss */
+.sige{
+  width:100%;
+  font-size:14px;
+  display: flex;
+  flex-wrap: wrap;
+  margin:0 20rpx;
+  /* justify-content:  */
+}
+.sige navigator{
+  width:50%;
+  margin:15rpx 0;
+}
+
+/* 用户信息 头像 更新 总的 */
+.retou{
+  width:1500rpx;
+  height:160rpx;
+  display: flex;
+  font-size:14px;
+  margin:15rpx;
+}
+/* 图片格式 */
+.retou-item image{
+  width:100%;
+  height:100%;
+  border-radius: 50%;
+}
+/* 一个用户的信息 */
+.retou-item{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  margin:0 20rpx;
+  text-align: center;
+}
+
+/* 圈子热帖  */
+/* 总的框 */
+.qzrt{
+  display: flex;
+  width:100%;
+  /* height:1000rpx; */
+  font-size:14px;
+}
+.qzrt .qztx{
+  width:15%;
+}
+.qzrt .qztx image{
+  width: 85rpx;
+  height:85rpx;
+  border-radius: 50%;
+  margin:15rpx 15rpx;
+}
+.qurt qzxx{
+  width:85%;
+}
+.qzxx .mz{
+  margin:20rpx 0;
+}
+.qzxx .nr{
+  margin:20rpx 0;
+}
+.qzxx .tp{
+  width:100%;
+  height:100%;
+}
+.qzxx .pl{
+  margin:20rpx 0 ;
+  background-color: #ddd;
+}
+.qzxx .lz{
+  font-size:13px;
+}

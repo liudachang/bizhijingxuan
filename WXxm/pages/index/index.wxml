@@ -1,0 +1,108 @@
+<!--index.wxml-->
+<!--  -->
+<view class="index-container">
+<!-- 搜索壁纸 -->
+<view>
+  <input class="ss zz" placeholder='  搜索壁纸'/>
+</view>  
+<!-- 2：轮播图 -->
+<view class="slider">
+  <swiper autoplay>
+    <swiper-item wx:for="{{list}}" wx:key="id">
+      <image src="{{item.img_url}}" lazy-load mode="aspectFill"></image>
+    </swiper-item>
+  </swiper>
+</view>
+<!-- 3:2*5按钮 九宫格 -->
+<view class="index-nav zz">
+  <view class="nav-item" wx:for="{{navList}}" wx:key="id"  >
+    <image src="{{item.img_url}}" bindtap="handleTap"  data-id="{{item.id}}" lazy-load mode="aspectFill"></image>
+    <text>{{item.title}}</text>
+  </view>
+</view>
+<!-- 4：热门专辑 -->
+<view class="index-re"> 
+  <text class="index-zj">热门专辑</text>    
+  <navigator class="gd" url="/pages/gengduo/gengduo">更多></navigator>
+</view>
+<!-- 4.1: 1*2 -->
+<view class="index-enter zz">
+    <navigator class="enter-item" wx:for="{{enterList}}" wx:key="id">
+      <image src="{{item.img_url}}" lazy-load mode="aspectFill"></image>
+      <text>{{item.title}}</text>
+    </navigator>
+</view>
+<!-- 5:圈子动态 -->
+<!-- <view class="shuxian" wx:for="{{shuxianList}}" wx:key="id">
+  <image src="{{item.img_url}}" lazy-load mode="aspectFill"></image>
+  <text>圈子动态</text>
+</view> -->
+<view class="shuxian">
+  <text>圈子动态</text>
+</view>
+
+  <!-- 滚屏操作 -->
+<scroll-view class='flex-test' scroll-x="true" scroll-y="false">
+<!-- 5:圈子动态 -->
+<view class="index-quan">
+  <!-- 框 -->
+  <view class="quan-item flex-test" >
+    <!-- 框里的东西 -->
+    <view class="q">
+        <text style="font-size:16px ">来自话题：#最感动的电影#</text>
+        <text class="z" >肖申克的救赎</text>
+          <view class="s">
+            <image class="san" src="http://127.0.0.1:3000/img/quanzi/1.jpg" lazy-load                              mode="aspectFill"></image>
+            <image class="san" src="http://127.0.0.1:3000/img/quanzi/2.jpg" lazy-load                              mode="aspectFill"></image>
+            <image class="san" src="http://127.0.0.1:3000/img/quanzi/3.jpg" lazy-load                              mode="aspectFill"></image>
+          </view>
+          <view class="tx">
+            <image class="touxiang" src="http://127.0.0.1:3000/img/quanzi/touxiang1.jpg"></image>
+            <text style="margin-left:10px;font-size:15px">Mrs.ling</text>
+          </view>
+    </view>
+  </view>
+
+  <!-- 框 -->
+  <view class="quan-item">
+    <!-- 框里的东西 -->
+    <view class="q">
+        <text style="font-size:16px ">来自话题：#假如宠物会说话#</text>
+        <text class="z" >猫</text>
+            <view class="s">
+              <image class="san" src="http://127.0.0.1:3000/img/quanzi/4.jpg" lazy-load                              mode="aspectFill"></image>
+              <image class="san" src="http://127.0.0.1:3000/img/quanzi/5.jpg" lazy-load                              mode="aspectFill"></image>
+              <image class="san" src="http://127.0.0.1:3000/img/quanzi/6.jpg" lazy-load                              mode="aspectFill"></image>
+            </view>
+        <view class="tx">
+          <image class="touxiang" src="http://127.0.0.1:3000/img/quanzi/touxiang2.jpg"></image>
+          <text style="margin-left:10px;font-size:15px">Kanahei</text>
+        </view>
+    </view>
+  </view>
+
+</view>
+
+</scroll-view>
+
+  <!-- 滚屏操作 -->
+<scroll-view class='flex-test' scroll-x="true" scroll-y="false">
+<!-- 6：精选 最新 主题套图 天生一对 -->
+  <view class="jingxuan">
+    <view><navigator>精选</navigator></view>
+    <view><navigator>最新</navigator></view>
+    <view><navigator>主体套图</navigator></view>
+    <view><navigator>天生一对</navigator></view>
+    <view><navigator>最佳锁屏</navigator></view>
+    <view><navigator>一天最热</navigator></view>
+    <view><navigator>一周排行</navigator></view>
+    <view><navigator>人气月榜</navigator></view>
+  </view>
+</scroll-view>
+<!-- 7：壁纸 -->
+<view class="bizhi">
+  <view class="bz-item" wx:for="{{bizhiList}}" wx:key="id">
+    <image src="{{item.img_url}}"  lazy-load mode="aspectFill"></image>
+  </view>
+</view>
+</view>

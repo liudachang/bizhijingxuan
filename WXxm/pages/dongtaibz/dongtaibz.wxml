@@ -1,0 +1,14 @@
+<!--pages/dongtaibz/dongtaibz.wxml-->
+<!-- 动态壁纸 跳转来 -->
+  <!-- 7：壁纸 -->
+<view class="bizhi">
+  <view class="bz-item" wx:for="{{bizhiList}}" wx:key="id">
+    <image src="{{item.img_url}}"  lazy-load mode="aspectFill"></image>
+  </view>
+</view>
+
+
+
+
+
+

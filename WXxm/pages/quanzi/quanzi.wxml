@@ -1,0 +1,62 @@
+<!--pages/quanzi/quanzi.wxml-->
+<!-- 精彩话题 -->
+<!-- 4：热门专辑 -->
+<view class="index-re"> 
+  <text class="index-zj">精彩话题</text>    
+  <navigator class="gd" url="/pages/gengduo/gengduo">更多></navigator>
+</view>
+<!-- 精彩话题下的四个 -->
+<view class="sige">
+  <navigator># 最萌猪年头像 #</navigator>
+  <navigator># 常用表情暴露年龄 #</navigator>
+  <navigator># 晒一张年味渐浓的照片 #</navigator>
+  <navigator># 手写福字过猪年 #</navigator>
+</view>
+<!-- 分隔块 -->
+<view class="divider"></view>
+
+<!-- 热门圈子 -->
+<view class="index-re"> 
+  <text class="index-zj">热门圈子</text>    
+  <navigator class="gd" url="/pages/gengduo/gengduo">更多></navigator>
+</view>
+<!-- 热门圈子下的用户信息 -->
+
+<!-- 滚屏操作 -->
+<scroll-view class='flex-test' scroll-x="true" scroll-y="false">
+<view class="retou">
+  <view class="retou-item" wx:for="{{rtList}}" wx:key="{{index}}">
+    <image src="{{item.img_url}}" lazy-load='true' mode="aspectFill"></image>
+    <view>{{item.name}}</view>
+    <view style='font-size:12px;color:#aaa'>{{item.title}}</view>
+  </view>
+</view>
+</scroll-view>
+
+<!-- 分隔块 -->
+<view class="divider"></view>
+
+<!-- 圈子热帖 -->
+<view class="index-re"> 
+  <text class="index-zj">圈子热帖</text>    
+</view>
+
+<view class="qzrt">
+<!-- 头像 -->
+  <view class="qztx"><image src="http://127.0.0.1:3000/img/quanzi/4.jpg"></image></view>
+  <!-- 右侧信息 -->
+  <view class="qzxx">
+  <!-- 名字 -->
+    <view class="mz">L菜OSER鸟</view>
+    <!-- 内容 -->
+    <view class="nr">喜欢</view>
+    <!-- 图片 -->
+    <image class="tp" src="http://127.0.0.1:3000/img/quanzi/4.jpg"> </image>
+    <!-- 评论 -->
+    <view class="pl"><text>L菜OSER鸟:</text>图片很好看 </view> 
+    <!-- 来自圈子 -->
+    <view  class="lz" >来自圈子</view>
+    <!-- 分隔块 -->
+<view class="divider" style="height:1px;"></view>
+  </view>
+</view>

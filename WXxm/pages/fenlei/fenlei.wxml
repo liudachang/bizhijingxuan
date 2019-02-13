@@ -1,0 +1,69 @@
+<!--pages/fenlei/fenlei.wxml-->
+<!-- 大框 -->
+<view class="fenlei">
+<!-- 左边框 -->
+  <view class="fenlei-zi">
+    <navigator class="fenlei-item"><text>风景建筑</text></navigator>
+    <navigator class="fenlei-item"><text>明星写真</text></navigator>
+    <navigator class="fenlei-item"><text>头像</text></navigator>
+    <navigator class="fenlei-item"><text>表情</text></navigator>
+    <navigator class="fenlei-item"><text>卡通动漫</text></navigator>
+    <navigator class="fenlei-item"><text>清新可爱</text></navigator>
+    <navigator class="fenlei-item"><text>文字控</text></navigator>
+    <navigator class="fenlei-item"><text>影视精选</text></navigator>
+    <navigator class="fenlei-item"><text>浪漫爱情</text></navigator>
+    <navigator class="fenlei-item"><text>美女车模</text></navigator>
+    <navigator class="fenlei-item"><text>体育竞技</text></navigator>
+    <navigator class="fenlei-item"><text>酷炫游戏</text></navigator>
+    <navigator class="fenlei-item"><text>世界名车</text></navigator>
+    <navigator class="fenlei-item"><text>时尚品牌</text></navigator>
+    <navigator class="fenlei-item"><text>节日节气</text></navigator>
+    <navigator class="fenlei-item"><text>创意设计</text></navigator>
+    <navigator class="fenlei-item"><text>动物萌宠</text></navigator>
+    <navigator class="fenlei-item"><text>花草植物</text></navigator>
+    <navigator class="fenlei-item"><text>神秘星座</text></navigator>
+  </view>
+<!-- 右边框 -->
+  <view class="ybk">
+    <view class="fenlei-tu">
+      <image src="http://127.0.0.1:3000/img/za/fl1.jpg"></image>
+    </view>
+    <!-- 风景建筑 -->
+    <view class="fjjz">
+      <text>风景建筑</text>
+    </view>
+    <!-- 3*n图片 -->
+    <!-- 所有图片整体的 -->
+    <view class="zhengge">
+    <!-- 整行的 -->
+        <view class="zhenghang">
+          <!-- 单个的 -->
+            <view class="dange">
+              <image src="http://127.0.0.1:3000/img/za/touxiang.jpg"></image>
+              <text>星座运势</text>
+            </view>
+            <view class="dange">
+              <image src="http://127.0.0.1:3000/img/za/touxiang.jpg"></image>
+              <text>星空</text>
+            </view>
+            <view class="dange">
+              <image src="http://127.0.0.1:3000/img/za/touxiang.jpg"></image>
+              <text>天空</text>
+            </view>
+            <view class="dange">
+              <image src="http://127.0.0.1:3000/img/za/touxiang.jpg"></image>
+              <text>雨</text>
+            </view>
+            <view class="dange">
+              <image src="http://127.0.0.1:3000/img/za/touxiang.jpg"></image>
+              <text>大海</text>
+            </view>
+            <view class="dange">
+              <image src="http://127.0.0.1:3000/img/za/touxiang.jpg"></image>
+              <text>唯美</text>
+            </view>
+        </view>
+    </view>
+  </view>
+
+</view>

@@ -1,0 +1,55 @@
+{
+  "pages": [
+    "pages/quanzi/quanzi",
+    "pages/fuli/fuli",
+    "pages/index/index",
+    "pages/gengduo/gengduo",
+    "pages/wode/wode",
+    "pages/fenlei/fenlei",
+    "pages/dongtaibz/dongtaibz",
+    "pages/logs/logs",
+    "pages/zhuanji/zhuanji"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#aaa",
+    "selectedColor": "#00a1e9",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "精选",
+        "iconPath": "pages/static/1.png",
+        "selectedIconPath": "pages/static/1_active.png"
+      },
+      {
+        "pagePath": "pages/fenlei/fenlei",
+        "text": "分类",
+        "iconPath": "pages/static/2.png",
+        "selectedIconPath": "pages/static/2_active.png"
+      },
+      {
+        "pagePath": "pages/fuli/fuli",
+        "text": "福利",
+        "iconPath": "pages/static/3.png",
+        "selectedIconPath": "pages/static/3_active.png"
+      },
+      {
+        "pagePath": "pages/quanzi/quanzi",
+        "text": "圈子",
+        "iconPath": "pages/static/4.png",
+        "selectedIconPath": "pages/static/4_active.png"
+      },
+      {
+        "pagePath": "pages/wode/wode",
+        "text": "我的",
+        "iconPath": "pages/static/5.png",
+        "selectedIconPath": "pages/static/5_active.png"
+      }
+    ]
+  }
+}

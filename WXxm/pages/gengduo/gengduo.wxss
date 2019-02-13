@@ -1,0 +1,29 @@
+/* pages/gengduo/gengduo.wxss */
+.gd_ll{
+  width:100%;
+  display: flex;
+  flex-wrap:wrap;
+}
+.gd_ll .ll-item{
+  width:45%;
+  margin:10rpx 10rpx;
+  /* display:flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center; */
+}
+.gd_ll .ll-item image{
+  width:100%;
+  height:200rpx;
+
+}
+.gd_ll .wz{
+  font-size:13px;
+  width:300rpx;
+  display: block;
+  /* height:100rpx; */
+  /*不换行 显示...*/
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space:nowrap; 
+}

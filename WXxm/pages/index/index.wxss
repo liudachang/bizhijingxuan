@@ -1,0 +1,150 @@
+/**index.wxss**/
+/*搜索框*/
+.ss{
+  background-color:#eee;
+  margin:10px 10px;
+  border-radius: 11px;
+}
+/*功能一：轮播*/
+.slider{
+  border-radius:100%;
+  margin:30rpx 15rpx;/*每块之间间距*/
+}
+.slider,.slider swiper, {
+  height:380rpx;
+  width:98%;
+  
+}
+.slider image{
+  width:100%;
+  height:100%;
+  border-radius:9px;
+}
+/*功能二：九宫格*/
+/*父元素*/
+.index-nav{
+  display: flex;
+  flex-wrap:wrap;
+  margin-bottom:50rpx;/*每块之间间距*/
+ /*每块之间间距*/
+}
+/*子元素*/
+.nav-item{
+  width:20%;
+  height:140rpx;
+  box-sizing:border-box;
+  display:flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+}
+/*子元素 图片*/
+ .nav-item image{
+ width:60rpx;
+ height:60rpx;
+ border-radius:3%
+} 
+
+
+
+
+
+/*父元素*/
+.index-enter{
+  display: flex;
+  flex-wrap:wrap;
+  margin:0 40rpx;
+  margin-bottom:50rpx;/*每块之间间距*/
+}
+/*子元素*/
+.index-enter .enter-item{
+  width:50%;
+  display:flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+}
+.index-enter image{
+  width:330rpx;
+  height:178rpx;
+  margin:10px 10px;
+  border-radius:9px;
+}
+.index-enter text{
+  width:310rpx;
+  height:40rpx;
+  overflow: hidden;/*不换行 显示...*/
+  text-overflow: ellipsis;/*不换行 显示...*/
+  white-space:nowrap;/*不换行 显示...*/
+  
+}
+/*圈子动态*/
+/*圈子动态文字*/
+.shuxian{
+  margin:10rpx 30rpx;
+}
+.shuxian text{
+  font-size:16px;
+}
+/**/
+.index-quan{
+  display:flex;
+  flex-wrap:nowrap;
+  margin-bottom:30rpx;/*每块之间间距*/
+}
+/*框*/
+.index-quan .quan-item {
+  display:flex;
+  flex-direction:column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  border:1px solid #eee;
+  width:80%;
+  height:380rpx;
+  border-radius: 11px;
+  margin:10px 10px;
+}
+/*三张图片*/
+/*弹性 不换行*/
+.quan-item .s{
+  display: flex;
+  flex-wrap:nowrap;
+}
+/*三张图片 大小*/
+.quan-item .san{
+  width:160rpx;
+  height:160rpx;
+  margin:10px 3px;
+  
+}
+.index-quan .touxiang{
+  width:50rpx;
+  height:50rpx;
+  border-radius:50%;
+}
+/*框里的所有东西靠左对齐*/
+.quan-item .q{
+  margin:5px 10px;
+  display:flex;
+  flex-direction:column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+/*头像名字 在一行居中*/
+.index-quan .tx{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+/*第二行文字 溢出隐藏 显示...*/
+.index-quan .z{
+  font-size:15px;
+  width:500rpx;
+  height:500repx;
+  overflow: hidden;/*不换行 显示...*/
+  text-overflow: ellipsis;/*不换行 显示...*/
+  white-space:nowrap;/*不换行 显示...*/
+  margin-top:5px;
+}
+
+

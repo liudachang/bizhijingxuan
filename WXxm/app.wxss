@@ -1,0 +1,111 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+/*正常字体*/
+.zz{font-size:14px;}
+
+/*通用的 箭头*/
+.arrow{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.arrow::after{
+  content:"";
+  width:15rpx;
+  height:15rpx;
+  border-top: 3rpx solid #858484;
+  border-right: 3rpx solid #858484;
+  transform: rotate(45deg);
+}
+
+/*通用功能一:添加分隔块*/
+.divider{
+  height:15rpx;
+  background:#eee;
+}
+/*通用功能二:截取超长名称*/
+.ell{
+  overflow: hidden;/*超出范围隐藏*/
+  white-space: nowrap;/*不允许换行*/
+  text-overflow: ellipsis;/*超出部分添加...*/
+}
+/*一行四个  精选*/
+.jingxuan{
+  width:1500rpx;
+  display: flex;
+  /* flex-wrap:nowrap;
+  overflow:hidden;*/
+}
+.jingxuan navigator{
+  border:1px solid #eee;
+  background-color:#eee;
+  border-radius: 11px;
+  margin:10rpx 10rpx;
+  font-size:14px;
+  padding:7rpx 20rpx;
+}
+/*我的 几行 收藏 下载 订单*/
+/*收藏*/
+.shoucang{
+  width:100%;
+  height:70rpx;
+  font-size:14px;
+  display: flex;
+  align-content: center;
+  margin:10rpx 10rpx;
+  border-bottom:1px solid #ccc;
+}
+.shoucang image{
+  width:50rpx;
+  height:50rpx;
+  margin:5rpx 10rpx;
+}
+.shoucang text{
+  margin:10rpx 10rpx;
+}
+
+/*功能三 ：热门专辑  带箭头的那种*/
+.index-re{
+  margin:10px 15px;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.index-re .index-zj{
+  font-size:16px;
+}
+/*更多的 箭头*/
+.index-re .gd{
+  font-size:14px;
+  color:#aaa;
+}
+
+/*点击变色*/
+/*壁纸3*N的壁纸*/
+.bizhi{
+  display:flex;
+  width: 100%;
+  flex-wrap:wrap;
+}
+.bizhi .bz-item{
+  width:33%;
+}
+.bizhi .bz-item image{
+  width:95%;
+  margin:5rpx 5rpx;
+}
+
+/* 滚动条 隐藏 */
+::-webkit-scrollbar{
+  width: 0;
+  height: 0;
+  color: transparent;
+}

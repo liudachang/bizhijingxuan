@@ -1,0 +1,23 @@
+<!--pages/gengduo/gengduo.wxml-->
+<!-- 6：精选 最新 主题套图 天生一对 -->
+ <!-- 滚屏操作 -->
+<scroll-view class='flex-test' scroll-x="true" scroll-y="false">
+<!-- 6：精选 最新 主题套图 天生一对 -->
+  <view class="jingxuan">
+    <view><navigator>精选</navigator></view>
+    <view><navigator>最新</navigator></view>
+    <view><navigator>主体套图</navigator></view>
+    <view><navigator>天生一对</navigator></view>
+    <view><navigator>最佳锁屏</navigator></view>
+    <view><navigator>一天最热</navigator></view>
+    <view><navigator>一周排行</navigator></view>
+    <view><navigator>人气月榜</navigator></view>
+  </view>
+</scroll-view>
+<!-- 一行两列 超多 -->
+<view class="gd_ll"> 
+  <view class="ll-item" wx:for="{{tuList}}" wx:key="id">
+    <image src="{{item.img_url}}" lazy-load mode="aspectFill"></image>
+    <text class="wz">{{item.title}}</text>
+  </view>
+</view>
